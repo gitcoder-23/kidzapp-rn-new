@@ -79,7 +79,8 @@ android {
 
     namespace "com.kidzapp"
 
-      packagingOptions {
+    // Exclude some files to resolve build conflicts
+    packagingOptions {
         exclude "res/drawable*/src_assets_images_*"
         exclude "res/drawable*/src_*"
     }
