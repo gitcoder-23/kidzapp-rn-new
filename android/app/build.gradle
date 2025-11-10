@@ -78,6 +78,12 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.kidzapp"
+
+      packagingOptions {
+        exclude "res/drawable*/src_assets_images_*"
+        exclude "res/drawable*/src_*"
+    }
+
     defaultConfig {
         applicationId "com.kidzapp"
         minSdkVersion rootProject.ext.minSdkVersion

@@ -1,7 +1,6 @@
 import {
   ActivityIndicator,
   Dimensions,
-  Image,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -39,10 +38,6 @@ const Welcome = ({ navigation }: WelcomeType) => {
 
   return (
     <View style={styles.mainContainer}>
-      <Image
-        source={require('../../assets/images/kidz_app_logo.png')}
-        style={styles.logoImg}
-      />
       <Text style={styles.welComeText}>Welcome to Kidz Play</Text>
       {loading ? (
         <>
