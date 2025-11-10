@@ -31,6 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     return true
   }
+
+  // required for react-native-orientation-locker
+  func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+    return Orientation.getOrientation()
+  }
 }
 
 class ReactNativeDelegate: RCTDefaultReactNativeFactoryDelegate {
